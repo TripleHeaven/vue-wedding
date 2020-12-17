@@ -18,13 +18,15 @@
       <StarElement title="Качество"></StarElement>
       <StarElement title="Пунктуальность"></StarElement>
     </div>
+    <CommentSection></CommentSection>
   </div>
 </template>
 <script>
 import StarElement from "./StarElement";
+import CommentSection from "./CommentSection";
 
 export default {
-  components: { StarElement },
+  components: { StarElement, CommentSection },
 };
 </script>
 
