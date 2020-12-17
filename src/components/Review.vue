@@ -12,10 +12,20 @@
         <p class="picture text author">Алена Смирнова</p>
       </div>
     </div>
+    <div class="starsection">
+      <StarElement title="Скорость"></StarElement>
+      <StarElement title="Скорость отдачи видео"></StarElement>
+      <StarElement title="Качество"></StarElement>
+      <StarElement title="Пунктуальность"></StarElement>
+    </div>
   </div>
 </template>
 <script>
-export default {};
+import StarElement from "./StarElement";
+
+export default {
+  components: { StarElement },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -25,6 +35,7 @@ export default {};
   width: 560px;
   height: 656px;
   border-radius: 16px;
+
   hr {
     opacity: 0.2;
   }
@@ -93,6 +104,15 @@ export default {};
         margin-top: 5px;
       }
     }
+  }
+  .starsection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 403px;
+    margin-left: 30px;
+    margin-top: 10px;
   }
 }
 </style>
