@@ -2,15 +2,17 @@
   <div id="app">
     <ReviewMain></ReviewMain>
     <ReviewSmall></ReviewSmall>
+    <ReviewCommentSmall></ReviewCommentSmall>
   </div>
 </template>
 
 <script>
 import ReviewMain from "./components/ReviewMain";
 import ReviewSmall from "./components/ReviewSmall";
+import ReviewCommentSmall from "./components/ReviewCommentSmall";
 export default {
   name: "App",
-  components: { ReviewMain, ReviewSmall },
+  components: { ReviewMain, ReviewSmall, ReviewCommentSmall },
 };
 </script>
 

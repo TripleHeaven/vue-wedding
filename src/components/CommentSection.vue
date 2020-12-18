@@ -1,7 +1,7 @@
 <template>
   <div class="inputcontainer">
     <textarea v-model="comment" />
-    <div class="inputcontainer quantitylabel">12/500</div>
+    <div class="inputcontainer quantitylabel">{{ comment.length }}/500</div>
   </div>
 </template>
 <script>
