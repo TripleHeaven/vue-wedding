@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <Review></Review>
+    <ReviewMain></ReviewMain>
   </div>
 </template>
 
 <script>
-import Review from "./components/Review";
+import ReviewMain from "./components/ReviewMain";
 export default {
   name: "App",
-  components: { Review },
+  components: { ReviewMain },
 };
 </script>
 

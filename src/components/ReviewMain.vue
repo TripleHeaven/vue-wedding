@@ -19,14 +19,18 @@
       <StarElement title="Пунктуальность"></StarElement>
     </div>
     <CommentSection></CommentSection>
+    <Gallery></Gallery>
+    <hr class="separateline" />
+    <button class="submitbutton">Отправить</button>
   </div>
 </template>
 <script>
 import StarElement from "./StarElement";
 import CommentSection from "./CommentSection";
+import Gallery from "./Gallery";
 
 export default {
-  components: { StarElement, CommentSection },
+  components: { StarElement, CommentSection, Gallery },
 };
 </script>
 
@@ -115,6 +119,32 @@ export default {
     width: 403px;
     margin-left: 30px;
     margin-top: 10px;
+  }
+  .separateline {
+    margin-top: 26px;
+  }
+  .submitbutton {
+    border: none;
+    width: 105px;
+    height: 36px;
+    min-width: 40px;
+    border-radius: 6px;
+    margin-right: 16px;
+    margin-top: 5px;
+    float: right;
+    text-decoration: none;
+    background: #53c6d1;
+    color: #ffffff;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 }
 </style>
