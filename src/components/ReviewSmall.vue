@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div class="label">
-      <div class="label text">Мой отзыв</div>
+      <div class="label text">Новый отзыв</div>
       <div class="label close"></div>
     </div>
-    <hr />
+
     <div class="picture">
       <img src="../assets/mainpic1.jpg" />
       <div class="picture text">
@@ -18,19 +18,15 @@
       <StarElement title="Качество"></StarElement>
       <StarElement title="Пунктуальность"></StarElement>
     </div>
-    <CommentSection></CommentSection>
-    <Gallery></Gallery>
     <hr class="separateline" />
-    <button class="submitbutton" @click="submitForm">Отправить</button>
+    <button class="submitbutton" @click="submitForm">Продолжить</button>
   </div>
 </template>
 <script>
 import StarElement from "./StarElement";
-import CommentSection from "./CommentSection";
-import Gallery from "./Gallery";
 
 export default {
-  components: { StarElement, CommentSection, Gallery },
+  components: { StarElement },
   methods: {
     submitForm() {
       alert("Вы успешно оставили комментарий!");
@@ -43,9 +39,9 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 .container {
   background: #ffffff;
-  width: 560px;
-  height: 656px;
-  border-radius: 16px;
+  width: 320px;
+  height: 573px;
+  border-radius: 16px 16px 0px 0px;
 
   hr {
     opacity: 0.2;
@@ -57,13 +53,13 @@ export default {
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       float: left;
-      margin-left: 32px;
+      margin-left: 16px;
       margin-top: 19px;
     }
     .close {
       position: absolute;
-      left: 540px;
-      margin-top: 21px;
+      left: 860px;
+      margin-top: 19px;
       width: 25px;
       height: 25px;
       opacity: 0.3;
@@ -88,12 +84,13 @@ export default {
   }
   .picture {
     display: flex;
+    flex-direction: column;
     img {
       border-radius: 6px;
-      width: 102px;
-      height: 68px;
-      margin-left: 32px;
-      margin-top: 14px;
+      width: 84px;
+      height: 56px;
+      margin-left: 16px;
+      margin-top: 7px;
     }
     .text {
       font-family: "Montserrat", sans-serif;
@@ -104,33 +101,36 @@ export default {
 
         font-weight: 600;
         font-size: 16px;
-        margin-top: 30px;
-        margin-left: 20px;
+        margin-top: 18px;
+        margin-left: 17px;
       }
       p {
         margin: 0;
         font-weight: 400;
         font-size: 12px;
-        margin-left: 20px;
+        margin-left: 17px;
         margin-top: 5px;
       }
     }
   }
   .starsection {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+
     justify-content: space-between;
-    width: 403px;
-    margin-left: 30px;
-    margin-top: 10px;
+
+    margin-left: 16px;
+    margin-top: 3px;
+    #block {
+      margin-bottom: -5px;
+    }
   }
   .separateline {
-    margin-top: 26px;
+    margin-top: 30px;
   }
   .submitbutton {
     border: none;
-    width: 105px;
+    width: 120px;
     height: 36px;
     min-width: 40px;
     border-radius: 6px;

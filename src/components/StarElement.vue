@@ -1,5 +1,5 @@
 <template>
-  <div class="starblock">
+  <div id="block" class="starblock">
     <div class="starblock label">
       {{ title }}
     </div>
@@ -61,7 +61,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
 .starblock {
