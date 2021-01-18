@@ -42,7 +42,8 @@ export default {
   width: 320px;
   height: 573px;
   border-radius: 16px 16px 0px 0px;
-
+  margin-left: 10px;
+  margin-top: 10px;
   hr {
     opacity: 0.2;
   }

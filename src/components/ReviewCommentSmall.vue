@@ -39,6 +39,8 @@ export default {
   background: #ffffff;
   width: 320px;
   height: 624px;
+  margin-left: 10px;
+  margin-top: 10px;
   .gallery {
     flex-wrap: wrap;
     margin-left: 15px;
