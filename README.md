@@ -1,4 +1,8 @@
-# vue-wedding
+# Three components for wedding dresses site
+
+## Appearence 
+
+![](main.png "Main Page")
 
 ## Project setup
 ```
